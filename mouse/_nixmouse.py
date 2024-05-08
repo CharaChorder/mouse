@@ -69,7 +69,6 @@ device = None
 def build_device():
     global device
     if device: return
-    ensure_root()
     device = aggregate_devices('mouse')
 init = build_device
 
